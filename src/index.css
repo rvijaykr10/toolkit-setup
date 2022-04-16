@@ -75,3 +75,26 @@ input {
 input:focus {
   outline: none;
 }
+
+.navbar {
+  height: 60px;
+  width: 100%;
+
+  padding: 0 10px;
+  border: solid 1px steelblue;
+  border-radius: 5px;
+
+  position: absolute;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navItem {
+  padding: 0 20px;
+}
+
+.joke {
+}

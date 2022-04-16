@@ -10,9 +10,11 @@ const AddItem = () => {
 
   const dispatch = useDispatch();
   const onSubmit = (e) => {
-    e.preventDefault();
-    dispatch(addItem({ item }));
-    setItem("");
+    if (item) {
+      e.preventDefault();
+      dispatch(addItem({ item }));
+      setItem("");
+    }
   };
 
   const onReset = () => dispatch(reset());
