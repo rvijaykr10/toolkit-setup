@@ -10,7 +10,12 @@ const Jokes = () => {
   }, [dispatch]);
 
   const { joke, isLoading } = useSelector((state) => state.jokes);
-  return <>{isLoading ? "loading..." : <div className="joke">{joke}</div>}</>;
+  return (
+    <div className="joke">
+      <h2>CHUCKNORRIS JOKES</h2>
+      {isLoading ? "loading..." : <div>{joke}</div>}
+    </div>
+  );
 };
 
 export default Jokes;

@@ -10,8 +10,8 @@ const AddItem = () => {
 
   const dispatch = useDispatch();
   const onSubmit = (e) => {
+    e.preventDefault();
     if (item) {
-      e.preventDefault();
       dispatch(addItem({ item }));
       setItem("");
     }

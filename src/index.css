@@ -21,6 +21,20 @@
   justify-content: center;
 }
 
+.dashboard {
+  height: 500px;
+  width: 500px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.dashboard h2 {
+  text-align: center;
+}
+
 .addItem {
   height: 50px;
   width: 300px;
@@ -97,4 +111,7 @@ input:focus {
 }
 
 .joke {
+  height: 500px;
+  width: 500px;
+  text-align: center;
 }
